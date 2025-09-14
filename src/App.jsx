@@ -6,12 +6,12 @@ const App = () => {
   return (
     <div>
       <Hero />
-      <Button 
+      <Button variant ="outline" size="lg"
       onClick = {() => console.log("Button Clicked ")}
-      className="cursor-pointer">Get Started</Button>
+      className="cursor-pointer shadow-md rounded-3xl">Get Started Anonymously</Button>
       <Button 
       onClick = {() => console.log('Welcome back!')}
-      className="cursor-pointer">Sign In</Button>
+      className="cursor-pointer shadow-md rounded-3xl">Sign In</Button>
     </div>
     
   )
