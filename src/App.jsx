@@ -1,19 +1,14 @@
-import { toast } from 'sonner'
-import Hero from './components/Hero'
-import { Button } from './components/ui/button'
-
+import { Route, Routes } from 'react-router-dom'
+import Hero from './components/Hero.jsx'
+import Navbar from './components/Navbar.jsx'
 const App = () => {
   return (
-    <div>
-      <Hero />
-      <Button variant ="outline" size="lg"
-      onClick = {() => console.log("Button Clicked ")}
-      className="cursor-pointer shadow-md rounded-3xl">Get Started Anonymously</Button>
-      <Button 
-      onClick = {() => console.log('Welcome back!')}
-      className="cursor-pointer shadow-md rounded-3xl">Sign In</Button>
+    <div className='cursor-none'>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Hero />} />
+      </Routes>
     </div>
-    
   )
 }
 
